@@ -1,0 +1,101 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body, html
+{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+nav {
+    text-transform: uppercase;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+    cursor: pointer;
+}
+nav li {
+    display: inline-block;
+    padding: 20px;
+}
+nav li:hover {
+    border-bottom: 1px solid black;
+}
+.section {
+    display: block;
+    margin: 0;
+    padding: 30px;
+    min-height: 100vh;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+.section h1 {
+    padding-top: 20px;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+#intro h2 {
+    padding-top: 0px;
+    margin-top: 0px;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+h2:not(.subtitle) {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#intro span {
+    letter-spacing: 6px;
+}
+h4 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+div#intro {
+    background-color: #F6EEA4;
+}
+div#services {
+    clear: both;
+    background-color: #BDE4F1;
+}
+section {
+    width: 60%;
+    float: left;
+}
+aside {
+    width: 40%;
+    float: right;
+}
+aside ul > li {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 5%;
+    margin: 15px;
+    text-align: left;
+    border: 1px solid black;
+}
+div#about {
+    background-color: #EDB5B5;
+}
+div#contact {
+    color: white;
+    background-color: #393535;
+}
