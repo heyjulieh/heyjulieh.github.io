@@ -1,26 +1,33 @@
 // JavaScript source code
-var middle;
-var view_middle;
-
 $(document).ready(function () {
-  var navlink;
-  var top;
-  $('nav li').click(function (e) {
-    e.preventDefault();
-    navlink = $(this).attr('id');
-    console.log('navlink is: ', navlink);
-    $('div#' + navlink).animate({ scrollTop: top }, 200);
-  })
-  $('nav h5').click(function (e) {
-    e.preventDefault();
-    $('nav div').removeClass('circle').addClass('full');
-    $('nav h5').addClass('hidden');
-    $('nav ul').removeClass('hidden');
-  })
-  $('.fa-arrow-up').click(function (e) {
-    e.preventDefault();
-    $('nav div').removeClass('full').addClass('circle');
-    $('nav ul').addClass('hidden');
-    $('nav h5').removeClass('hidden');
-  })
+    var navlink;
+    $('nav li').click(function (e) {
+        e.preventDefault();
+        navlink = $(this).attr('id');
+       $('html, body').animate({ scrollTop: $('div#'+navlink).offset().top }, 500, 'linear');
+    })
+    $('nav h5').click(function (e) {
+        e.preventDefault();
+        $('nav div').removeClass('circle').addClass('full');
+        $('nav h5').addClass('hidden');
+        $('nav ul').removeClass('hidden');
+    })
+    $('.fa-arrow-up').click(function (e) {
+        e.preventDefault();
+        $('nav div').removeClass('full').addClass('circle');
+        $('nav ul').addClass('hidden');
+        $('nav h5').removeClass('hidden');
+    })
+    var intro_top = $('div#intro').offset().top;
+    var services_top = $('div#services').offset().top;
+    var about_top = $('div#about').offset().top;
+    var contact_top = $('div#contact').offset().top;
+    var intro_bottom = $('div#intro').offset().bottom;
+    var services_bottom = $('div#services').offset().bottom;
+    var about_bottom = $('div#about').offset().bottom;
+    var contact_top = $('div#contact').offset().bottom;
+    console.log('intro top: ', intro_top);
+    console.log('services top: ', services_top);
+    console.log('about top: ', about_top);
+    console.log('contact top: ', contact_top);
 });
