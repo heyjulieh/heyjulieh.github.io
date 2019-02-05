@@ -96,16 +96,18 @@ nav h5 {
   top:0;
 }
 .section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   align-items: center;
   margin: 0;
   padding: 30px;
+  clear: both;
 }
 section {
   width: 100%;
+  clear: both;
 }
 div#intro {
   background-color: #F6EEA4;
@@ -122,7 +124,8 @@ div#contact {
   background-color: #393535;
 }
 .section h1 {
-  padding-top: 20px;
+  margin-top: 0px;
+  padding-top: 0px;
   font-size: 80px;
   text-transform: uppercase;
   font-weight: 700;
@@ -157,6 +160,24 @@ h4 {
   width: 40%;
   float: right;
 }
+.left_center {
+  width: 50%;
+  float: left;
+}
+aside.center {
+  text-align: center;
+}
+.right_center {
+  width: 50%;
+  float: right;
+}
+.section_image {
+  width: 50%;
+  padding-top: 20px;
+}
+section h3, section p, section div {
+  clear: both;
+}
 aside ul > li {
   display: -webkit-flex;
   display: flex;
@@ -168,4 +189,41 @@ aside ul > li {
   margin: 15px;
   text-align: left;
   border: 1px solid black;
+}
+#creativity {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  max-height: 300px;
+}
+.copyright {
+  font-size: 12px;
+  font-weight: 100;
+}
+h5 {
+  font-size: 24px;
+}
+h6 {
+  font-size: 16px;
+  font-weight: 200;
+}
+@media only screen and (max-width: 550px) {
+  #creativity, aside.center {
+    display: none;
+  }
+  #services_list, #services_blurb, aside.text {
+    width: 100%;
+  }
+  #services_list li {
+    font-size: 14px;
+    height: 15px;
+    padding: 5px;
+    margin: 5px;
+  }
+  #services_list ul {
+    padding: 0;
+    margin: 0;
+  }
+  .extra {
+    display: none;
+  }
 }
