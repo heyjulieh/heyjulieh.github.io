@@ -206,6 +206,14 @@ h6 {
   font-size: 16px;
   font-weight: 200;
 }
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: #F6EEA4;
+  border-bottom: 1px solid #F6EEA4;
+}
 @media only screen and (max-width: 550px) {
   #creativity, aside.center {
     display: none;
@@ -226,4 +234,5 @@ h6 {
   .extra {
     display: none;
   }
+
 }
