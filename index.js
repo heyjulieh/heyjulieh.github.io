@@ -19,7 +19,7 @@ $(document).ready(function () {
         $('nav ul').addClass('hidden');
         $('nav h5').removeClass('hidden');
     });
-    $('#services li').click(function(e) {
+    $('#services_list li').click(function(e) {
         e.preventDefault();
         button = $(this).attr('id')
         if ($('section.' + button).hasClass('hidden')) {
