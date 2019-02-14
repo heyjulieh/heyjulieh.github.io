@@ -1,4 +1,3 @@
-var elem;
 var button;
 
 $(document).ready(function () {
@@ -22,7 +21,6 @@ $(document).ready(function () {
     });
     $('#services li').click(function(e) {
         e.preventDefault();
-        elem = $(this);
         button = $(this).attr('id')
         if ($('section.' + button).hasClass('hidden')) {
             $('section.' + button).removeClass('hidden');
