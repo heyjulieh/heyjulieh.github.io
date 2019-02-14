@@ -1,4 +1,6 @@
-// JavaScript source code
+var elem;
+var button;
+
 $(document).ready(function () {
     var navlink;
     $('nav li').click(function (e) {
