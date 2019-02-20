@@ -40,16 +40,16 @@ $(document).ready(function () {
         $('body').find('section.' + button).addClass('hidden');
       }
     });
-    var intro_top = $('div#intro').offset().top;
-    var services_top = $('div#services').offset().top;
-    var about_top = $('div#about').offset().top;
-    var contact_top = $('div#contact').offset().top;
-    var intro_bottom = $('div#intro').offset().bottom;
-    var services_bottom = $('div#services').offset().bottom;
-    var about_bottom = $('div#about').offset().bottom;
-    var contact_top = $('div#contact').offset().bottom;
-    console.log('intro top: ', intro_top);
-    console.log('services top: ', services_top);
-    console.log('about top: ', about_top);
-    console.log('contact top: ', contact_top);
+//    var intro_top = $('div#intro').offset().top;
+//    var services_top = $('div#services').offset().top;
+//    var about_top = $('div#about').offset().top;
+//    var contact_top = $('div#contact').offset().top;
+//    var intro_bottom = $('div#intro').offset().bottom;
+//    var services_bottom = $('div#services').offset().bottom;
+//    var about_bottom = $('div#about').offset().bottom;
+//    var contact_top = $('div#contact').offset().bottom;
+//    console.log('intro top: ', intro_top);
+//    console.log('services top: ', services_top);
+//    console.log('about top: ', about_top);
+//    console.log('contact top: ', contact_top);
 });
