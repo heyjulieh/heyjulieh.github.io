@@ -241,7 +241,10 @@ aside ul > li:hover {
     clear: both;
 }
 
-.modal h1, .modal p {
+.modal h2 {
+    font-size: 7vw;
+}
+.modal h2, .modal p {
     padding: 0px 30px 30px 30px;
 }
 
