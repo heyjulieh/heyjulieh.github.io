@@ -233,8 +233,7 @@ aside ul > li:hover {
 .modal {
     float: left;
     position: absolute;
-    max-width: 50vw;
-    min-height: 50vh;
+    max-width: 70vw;
     z-index: 10;
     background-color: white;
     overflow-x: hidden;
