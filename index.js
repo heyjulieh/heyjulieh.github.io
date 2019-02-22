@@ -80,3 +80,17 @@ $( window ).resize(function() {
     $(".section h1").fitText(.58);
   }
 });
+$( window ).orientationchange(function() {
+  if ($(window).width() > 1125) {
+    $("h2").fitText(1.2);
+    $(".section h1").fitText(.7);
+  }
+  else if ($(window).width() < 550) {
+    $("h2").fitText(.55);
+    $(".section h1").fitText(.38);
+  }
+  else {
+    $("h2").fitText(.8);
+    $(".section h1").fitText(.58);
+  }
+});
