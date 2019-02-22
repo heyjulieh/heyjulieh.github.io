@@ -40,7 +40,7 @@ $(document).ready(function () {
         $('body').find('section.' + button).addClass('hidden');
       }
     });
-    $("h5").fitText(1);
+    $("h5:not(nav h5)").fitText(1);
     if ($(window).width() > 1125) {
       $("h2").fitText(1.2);
       $(".section h1").fitText(.7);
