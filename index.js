@@ -80,7 +80,7 @@ $( window ).resize(function() {
     $(".section h1").fitText(.58);
   }
 });
-$( window ).orientationchange(function() {
+$( window ).on( "orientationchange", function() {
   if ($(window).width() > 1125) {
     $("h2").fitText(1.2);
     $(".section h1").fitText(.7);
