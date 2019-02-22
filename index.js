@@ -22,17 +22,17 @@ $(document).ready(function () {
     $('#services_list li').click(function(e) {
         e.preventDefault();
         button = $(this).attr('id')
-        if ($('section.' + button).hasClass('hidden')) {
-            $('section.' + button).removeClass('hidden');
-            $('.modal').not('section.' + button).addClass('hidden');
+        if ($('aside.' + button).hasClass('hidden')) {
+            $('aside.' + button).removeClass('hidden');
+            $('.modal').not('aside.' + button).addClass('hidden');
         } else {
             $('.modal').addClass('hidden');
         }
     });
-    $('section .close').click(function(e) {
+    $('aside .close').click(function(e) {
         e.preventDefault();
-        if ($('section.' + button).hasClass('hidden')==false) { 
-            $('section.' + button).addClass('hidden')
+        if ($('aside.' + button).hasClass('hidden')==false) {
+            $('aside.' + button).addClass('hidden')
         }
     });
    $(document).click(function(event) {
@@ -40,6 +40,19 @@ $(document).ready(function () {
         $('body').find('section.' + button).addClass('hidden');
       }
     });
+    $("h5").fitText(1);
+    if ($(window).width() > 1125) {
+      $("h2").fitText(1.2);
+      $(".section h1").fitText(.7);
+    }
+    else if ($(window).width() < 550) {
+      $("h2").fitText(.55);
+      $(".section h1").fitText(.38);
+    }
+    else {
+      $("h2").fitText(.8);
+      $(".section h1").fitText(.58);
+    }
 //    var intro_top = $('div#intro').offset().top;
 //    var services_top = $('div#services').offset().top;
 //    var about_top = $('div#about').offset().top;
@@ -52,4 +65,18 @@ $(document).ready(function () {
 //    console.log('services top: ', services_top);
 //    console.log('about top: ', about_top);
 //    console.log('contact top: ', contact_top);
+});
+$( window ).resize(function() {
+  if ($(window).width() > 1125) {
+    $("h2").fitText(1.2);
+    $(".section h1").fitText(.7);
+  }
+  else if ($(window).width() < 550) {
+    $("h2").fitText(.55);
+    $(".section h1").fitText(.38);
+  }
+  else {
+    $("h2").fitText(.8);
+    $(".section h1").fitText(.58);
+  }
 });

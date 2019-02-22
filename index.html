@@ -19,8 +19,9 @@
 
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"
               integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-              crossorigin="anonymous"></script>
-
+              crossorigin="anonymous">
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.js"></script>
       <script src="index.js"></script>
 
   </head>
@@ -48,59 +49,13 @@
       <div class="container">
           <div id="intro" class="section">
               <section>
-                <aside class="left">
-                  <h1><span>When</span><br />& How</h1>
-                  <h2 class="subtitle">Creative<br />Services</h2>
-                </aside>
-                <aside class="right">
-                  <img id="creativity" src ="creativity.svg" alt="creativity"/>
-                </aside>
+                <img class="float" id="creativity" src ="creativity.svg" alt="creativity"/>
+                <h1><span>When</span><br />& How</h1>
+                <h2 class="subtitle">Creative<br />Services</h2>
               </section>
           </div>
           <div id="services" class="section">
-              <section id="brandingsection" class="modal branding hidden">
-                <span class="close"><i class="fas fa-times"></i></span>
-                <h2>Branding</h2>
-                <p>
-                    Your business is your brand. We offer brand strategy and brand design services. We’ll work together to create a visual story around your business that’s unique to your team and caters to your target customer.
-                </p>
-            </section>
-            <section id="socialmediasection" class="modal socialmedia hidden">
-                <span class="close"><i class="fas fa-times"></i></span>
-                <h2>Social Media</h2>
-                <p>
-                    We’re passionate about social media and so are your customers. We’ll help you build your social media presence from the ground up if you’re unfamiliar or we’ll focus on sprucing up your existing channels to build content that resonates!
-                </p>
-            </section>
-            <section id="menussection" class="modal menus hidden">
-                <span class="close"><i class="fas fa-times"></i></span>
-                <h2>Menus</h2>
-                <p>
-                    What’s on your menu? From entrées to massages, it’s important to present your services in a way  that’s clear AND delightful for your customers. We’ll help you get there through thoughtful design in all formats...digital and print!
-                </p>
-            </section>
-            <section id="bannerssection" class="modal banners hidden">
-                <span class="close"><i class="fas fa-times"></i></span>
-                <h2>Banners</h2>
-                <p>
-                    Creating an eye-catching banner sets the tone for your business! Today, banners come in all shapes and sizes.
-                    <br />We offer traditional banner services for your storefront as well as digital banner services for your ad campaigns. Let us know what format you’re interested in and we’ll get to work!
-                </p>
-            </section>
-            <section id="flyerssection" class="modal flyers hidden">
-                <span class="close"><i class="fas fa-times"></i></span>
-                <h2>Flyers</h2>
-                <p>
-                    Print is not dead! We believe adding a physical touch makes all the difference. From flyers to inserts we can help your business with that personal touch.
-                </p>
-            </section>
-            <section id="emailsection" class="modal email hidden">
-                <span class="close"><i class="fas fa-times"></i></span>
-                <h2>Email</h2>
-                <p>
-                    Email marketing? If you’re not, maybe you should be! Newsletters have been proven to help improve website traffic, drive sales, and a great way to stay connected with your customers. We’ll work with you to dynamically design engaging and eye-catching newsletter templates, fit for any screen.
-                </p>
-            </section>
+
             <section id="main">
                   <h2>Our<br />Services</h2>
                   <aside id="services_blurb" class="left">
@@ -114,6 +69,49 @@
                           While we've worked with a lot of businesses of varying sizes, we're particularly passionate about small businesses. We know how hard it is to get started, and we're here to answer all the questions that is needed to build a strong foundation for success.
                       </p>
                   </aside>
+                  <aside id="brandingsection" class="modal branding hidden right">
+                    <span class="close"><i class="fas fa-times"></i></span>
+                    <h2>Branding</h2>
+                    <p>
+                        Your business is your brand. We offer brand strategy and brand design services. We’ll work together to create a visual story around your business that’s unique to your team and caters to your target customer.
+                    </p>
+                </aside>
+                <aside id="socialmediasection" class="modal socialmedia hidden right">
+                    <span class="close"><i class="fas fa-times"></i></span>
+                    <h2>Social Media</h2>
+                    <p>
+                        We’re passionate about social media and so are your customers. We’ll help you build your social media presence from the ground up if you’re unfamiliar or we’ll focus on sprucing up your existing channels to build content that resonates!
+                    </p>
+                </aside>
+                <aside id="menussection" class="modal menus hidden right">
+                    <span class="close"><i class="fas fa-times"></i></span>
+                    <h2>Menus</h2>
+                    <p>
+                        What’s on your menu? From entrées to massages, it’s important to present your services in a way  that’s clear AND delightful for your customers. We’ll help you get there through thoughtful design in all formats...digital and print!
+                    </p>
+                </aside>
+                <aside id="bannerssection" class="modal banners hidden right">
+                    <span class="close"><i class="fas fa-times"></i></span>
+                    <h2>Banners</h2>
+                    <p>
+                        Creating an eye-catching banner sets the tone for your business! Today, banners come in all shapes and sizes.
+                        <br />We offer traditional banner services for your storefront as well as digital banner services for your ad campaigns. Let us know what format you’re interested in and we’ll get to work!
+                    </p>
+                </aside>
+                <aside id="flyerssection" class="modal flyers hidden right">
+                    <span class="close"><i class="fas fa-times"></i></span>
+                    <h2>Flyers</h2>
+                    <p>
+                        Print is not dead! We believe adding a physical touch makes all the difference. From flyers to inserts we can help your business with that personal touch.
+                    </p>
+                </aside>
+                <aside id="emailsection" class="modal email hidden right">
+                    <span class="close"><i class="fas fa-times"></i></span>
+                    <h2>Email</h2>
+                    <p>
+                        Email marketing? If you’re not, maybe you should be! Newsletters have been proven to help improve website traffic, drive sales, and a great way to stay connected with your customers. We’ll work with you to dynamically design engaging and eye-catching newsletter templates, fit for any screen.
+                    </p>
+                </aside>
                   <aside id="services_list" class="right">
                       <ul>
                           <li id="branding">
@@ -140,7 +138,7 @@
           </div>
           <div id="about" class="section">
               <section>
-                  <h2>Who<br />We<br />Are</h2>
+                  <h2>Who<br />We Are</h2>
                   <div>
                     <aside class="left_center text">
                       <h3>Our Mission</h3>
@@ -179,7 +177,7 @@
                   <h2>Let's<br />Chat!</h2>
                   <h6>Don't be shy-- introduce yourself! Let's start working together!</h6>
                   <h5>Email us: <a href="mailto:thewhenandhow@gmail.com">thewhenandhow@gmail.com</a></h5>
-                  <p>We'll get back to you within 48 hours!</p><br /><br />
+                  <p class="subtext">We'll get back to you within 48 hours!</p><br /><br />
                    <div class="copyright">
                         <p>When & How © 2019<br />
                         Icons made by CC 3.0</p>

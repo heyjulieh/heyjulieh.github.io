@@ -3,7 +3,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
     background-color: transparent;
 }
 
@@ -15,6 +15,7 @@ header {
     padding: 0;
     margin: 0;
     z-index: 100;
+    overflow-x: hidden;
 }
 
 nav {
@@ -84,14 +85,15 @@ nav h5 {
 }
 
 .full {
-    width: 100%;
+    /*width: 100%;
     height: 100px;
     line-height: normal;
     padding: 0;
-    margin: 0px 0px 0px 0px;
+    margin: 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     transition-duration: .8s;
+    background-color: lightyellow;*/
 }
 
 .hidden {
@@ -104,6 +106,7 @@ nav h5 {
     position: absolute;
     right: 0;
     top: 0;
+    overflow-x: hidden;
 }
 
 .section {
@@ -139,11 +142,9 @@ div#contact {
     background-color: #393535;
     position: relative;
 }
-
 .section h1 {
     margin-top: 0px;
     padding-top: 0px;
-    font-size: 8vh;
     text-transform: uppercase;
     font-weight: 700;
     padding-bottom: 0px;
@@ -153,19 +154,15 @@ div#contact {
 #intro h2 {
     padding-top: 0px;
     margin-top: 0px;
-    font-size: 6vh;
     text-transform: uppercase;
     font-weight: 100;
 }
 
 h2:not(.subtitle) {
-    font-size: 7vh;
+    display: block;
     text-transform: uppercase;
     font-weight: 700;
-}
-
-#intro span {
-    letter-spacing: 6px;
+    margin-bottom: 20px;
 }
 
 h4 {
@@ -181,6 +178,15 @@ p {
 .left {
     width: 60%;
     float: left;
+}
+
+.float {
+  position: absolute;
+  width: 40%;
+  float: right;
+  right: 0;
+  top: 50px;
+  transform: rotate(20deg);
 }
 
 .right {
@@ -232,20 +238,16 @@ aside ul > li:hover {
 }
 
 .modal {
-    float: left;
     position: absolute;
-    max-width: 70vw;
     z-index: 10;
     background-color: white;
     overflow-x: hidden;
     clear: both;
-}
-
-.modal h2 {
-    font-size: 7vw;
+    width: 60%;
 }
 .modal h2, .modal p {
-    padding: 0px 30px 30px 30px;
+    padding: 0px 20px 20px 20px;
+    margin-bottom: 0px;
 }
 
 .close {
@@ -269,14 +271,7 @@ aside ul > li:hover {
     color: white;
 }
 
-#creativity {
-    padding-top: 10px;
-    margin-bottom: 10px;
-    max-height: 300px;
-}
-
 .copyright {
-    width: 100%;
     padding-left: 30px;
     font-size: 12px;
     font-weight: 100;
@@ -285,30 +280,21 @@ aside ul > li:hover {
     left: 0;
 }
 
-h5 {
-    font-size: 5vw;
-}
-
 h6 {
     font-size: 3vh;
     font-weight: 200;
 }
-
 a {
     color: white;
     text-decoration: none;
 }
 
-    a:hover {
-        color: #F6EEA4;
-        border-bottom: 1px solid #F6EEA4;
-    }
+a:hover {
+    color: #F6EEA4;
+    border-bottom: 1px solid #F6EEA4;
+}
 
 @media only screen and (max-width: 562px) {
-    #creativity, aside.center {
-        display: none;
-    }
-
     #services_list, #services_blurb, aside.text {
         width: 100%;
     }
@@ -318,24 +304,45 @@ a {
         padding: 5px;
         margin: 5px;
     }
-
     #services_list ul {
         padding: 0;
         margin: 0;
     }
-
+    .modal {
+      width: 90%;
+    }
     .extra {
         display: none;
     }
 }
-
-@media only screen and (max-width: 594px) {
-    nav li {
-        width: 100%;
-        padding: 5px 0px 5px 0px;
+@media only screen and (max-width: 570px) {
+    .float {
+      display: block;
+      position: relative;
+      width: 40%;
+      top: 0px;
+      transition-duration: .8s;
     }
-    .full {
-        height: 200px;
+}
+@media only screen and (min-width: 570px) {
+    .float {
+      transition-duration: .8s;
     }
 }
 
+@media only screen and (min-width: 1125px) {
+    img.float {
+      width: 47%;
+    }
+}
+
+@media only screen and (min-width: 300px) {
+  #intro span {
+    letter-spacing:10px !important;
+  }
+}
+@media only screen and (max-width: 300px) {
+      #intro span {
+        letter-spacing: 3px !important;
+      }
+}
