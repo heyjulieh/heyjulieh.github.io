@@ -292,6 +292,9 @@ a:hover {
     color: #F6EEA4;
     border-bottom: 1px solid #F6EEA4;
 }
+.ui-loader {
+  display:none !important;
+}
 @media only screen and (max-width: 579px) {
   nav li {
     width: 100%;

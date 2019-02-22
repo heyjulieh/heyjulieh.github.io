@@ -53,6 +53,7 @@ $(document).ready(function () {
       $("h2").fitText(.8);
       $(".section h1").fitText(.58);
     }
+
 //    var intro_top = $('div#intro').offset().top;
 //    var services_top = $('div#services').offset().top;
 //    var about_top = $('div#about').offset().top;
